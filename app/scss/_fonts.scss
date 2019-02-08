@@ -1,0 +1,7 @@
+@import "_mixins/font-face";
+
+@include font-face("lato-example", "../fonts/LatoRegular/LatoRegular");
+@include font-face("lato-example", "../fonts/LatoBold/LatoBold", bold);
+@include font-face("play-example", "../fonts/PlayfairDisplayItalic/PlayfairDisplayItalic");
+@include font-face("play-example", "../fonts/PlayfairDisplayBoldItalic/PlayfairDisplayBoldItalic", bold);
+@include font-face("krinkes-example", "../fonts/KrinkesDecorPERSONAL/KrinkesDecorPERSONAL");

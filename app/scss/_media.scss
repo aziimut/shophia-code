@@ -1,0 +1,147 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+
+  .wrapper-caption{
+    padding: 15px!important;
+    .h5{
+      font-size: 1rem!important;
+    }
+    .h1{
+      font-size: 3rem!important;
+    }
+    .h4{
+      font-size: 1rem!important;
+      &::before{
+        display: none!important;
+      }
+      &::after{
+        display: none!important;
+      }
+    }
+    .p{
+      font-size: 1rem;
+    }
+  }
+
+  .slider-item .caption .btn {
+    padding: 0.5rem 1rem;
+  }
+  .slid-btn{
+    margin-top: 1rem!important;
+  }
+
+  .my-head::before{
+    display: none;
+  }
+  .navbar-light .navbar-brand{
+    font-size: 60px;
+  }
+  .slick-dots{
+    bottom: -4px;
+    li{
+      button{
+        &::before{
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+  }
+
+	
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+  .menu-top{
+    .nav-item {
+      margin-left: 15px;
+    }
+    .divider{
+      &:after{
+        right: -15%;
+      }
+    }
+    .navbar-brand {
+      font-family: "krinkes-example", sans-serif;
+      font-size: 20px;
+      color: #000;
+    }
+  }
+  .navbar-light .dropdown{
+    margin-top: 15px;
+  }
+
+  .wrapper-caption{
+    display: none;
+  }
+
+  .navbar-light {
+    .navbar-brand {
+      display: none;
+    }
+  }
+  .s-1 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  section .s-title h2 {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+
+
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+  .h2, h2 {
+    font-size: 1.5rem;
+  }
+
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+
+  .menu-top{
+    .navbar-collapse{
+      display: flex !important;
+      flex-basis: auto;
+    }
+  }
+  
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+	
+}
